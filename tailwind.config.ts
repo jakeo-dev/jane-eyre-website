@@ -8,9 +8,22 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        hurricane: ["var(--font-hurricane)", "sans-serif"],
+        ebGaramond: ["var(--font-ebGaramond)", "sans-serif"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        hazel: {
+          100: "#f2f5c6",
+          200: "#eee8aa",
+          300: "#cbce86",
+          400: "#a8b461",
+          500: "#86993d",
+          600: "#637f19",
+          700: "#4b6110",
+          800: "#394a0c",
+          900: "#1f2906",
+        },
       },
     },
   },

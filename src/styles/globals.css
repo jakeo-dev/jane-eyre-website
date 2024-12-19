@@ -2,20 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer components {
+  .proj {
+    @apply flex flex-col bg-white rounded-xl shadow-md;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .sub1title {
+    @apply text-2xl text-gray-900 text-left font-semibold py-4 mt-16;
+  }
+
+  .sub2title {
+    @apply text-xl text-gray-900 text-left font-medium py-4 mt-10;
+  }
+
+  .sub3title {
+    @apply text-lg text-gray-900 text-left font-medium py-4 mt-6;
+  }
+
+  .postDatesDiv {
+    @apply flex text-sm text-gray-600 text-left gap-3 mt-2.5;
+  }
+
+  .text {
+    @apply text-xl w-full lg:max-w-[30rem] xl:max-w-[55rem] text-left text-pretty leading-7 mb-3 last:mb-0;
+  }
+
+  .subtext {
+    @apply text-sm text-left italic text-gray-600 mt-1.5;
+  }
+
+  .link {
+    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-blue-600 active:text-blue-700 transition;
+  }
+
+  .postImgDiv {
+    @apply mt-3 mb-6;
+  }
+
+  .postImg {
+    @apply w-full rounded-lg border-2 border-gray-200;
+  }
+
+  .postThumbImgDiv {
+    @apply mt-2;
+  }
+
+  .postThumbImg {
+    @apply rounded-3xl;
+  }
+
+  .fadeIn {
+    @apply invisible opacity-0 transition-all;
+  }
+
+  .fadeOut {
+    @apply visible opacity-100 transition-all;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.fade-text {
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 }
