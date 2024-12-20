@@ -1,16 +1,34 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
 
 export default function Sidebar(props: {
   currentPage: string;
   font: string;
   font2: string;
 }) {
+  const [sidebarVisible, setSidebarVisible] = useState(false);
+
   return (
-    <>
+    <div className={`${props.font2} absolute top-6 left-8 z-10 lg:static`}>
       {/* sidebar */}
+      <button
+        className="lg:hidden text-2xl flex items-center pb-4"
+        onClick={() => {
+          if (sidebarVisible) setSidebarVisible(false);
+          else setSidebarVisible(true);
+        }}
+      >
+        <FontAwesomeIcon icon={faEllipsis} className="text-3xl mr-3" />
+        Menu
+      </button>
+
       <div
-        className={`${props.font2} hidden lg:block lg:h-full lg:w-[26rem] bg-gradient-to-r from-hazel-500/10 via-hazel-500/10 to-hazel-600/20 px-12 py-24`}
+        className={`${props.font2} ${
+          sidebarVisible ? "fadeOut" : "fadeIn"
+        } lg:fadeOut lg:h-full lg:w-[26rem] bg-stone-300 rounded-xl lg:rounded-none shadow-lg lg:bg-gradient-to-r from-hazel-400/10 via-hazel-400/10 to-hazel-500/20 px-8 lg:px-12 py-12 lg:py-24`}
       >
         <div className="flex items-start">
           <Image
@@ -22,11 +40,11 @@ export default function Sidebar(props: {
           ></Image>
           <div>
             <h1
-              className={`${props.font} text-6xl font-bold drop-shadow-md transition`}
+              className={`${props.font} text-5xl lg:text-6xl font-bold drop-shadow-md transition`}
             >
               Jane Eyre
             </h1>
-            <h2 className="text-xl mt-1.5">English Governess</h2>
+            <h2 className="text-lg lg:text-xl mt-1.5">English Governess</h2>
           </div>
         </div>
         <div className="text-gray-600 flex flex-col gap-y-2 pt-3 mt-6">
@@ -60,18 +78,8 @@ export default function Sidebar(props: {
           >
             <span>Employment</span>
           </Link>
-          <Link
-            href="about-me"
-            className={`${
-              props.currentPage == "about"
-                ? "text-white bg-hazel-500/80 hover:bg-hazel-400/80 active:bg-hazel-500/80"
-                : "hover:border-hazel-500/80 active:bg-gray-500/10"
-            } text-2xl rounded-md border-2 border-transparent px-3 py-1 transition mr-1.5`}
-          >
-            <span>About Me</span>
-          </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 }
