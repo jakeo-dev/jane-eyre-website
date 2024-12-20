@@ -82,9 +82,9 @@ export default function Blog() {
             </h3>
             <h4 className="text text-lg">September 23rd, 1838</h4>
             <h4 className="text text-lg fade-text">
-              I would say I have read a significant number of stories in my
+              {`I would say I have read a significant number of stories in my
               lifetime, both historical and fantastical. My first choice would
-              be Jonathan Swift's novel, Gulliver's Travels...
+              be Jonathan Swift's novel, Gulliver's Travels...`}
             </h4>
           </div>
         </div>
