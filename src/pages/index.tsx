@@ -60,9 +60,9 @@ export default function Home() {
           daughter of Edward Rochester in England, Adèle Varens.
         </p>
         <p className="text">
-          I hope to present to you, the reader, on this website all about my
-          personality, my past work, and my life experiences, in order for you
-          to gain a good sense of who I am.
+          I hope to present to you on this website all about my personality, my
+          past work, and my life experiences, so that you are able to gain a
+          good sense of who I am.
         </p>
 
         <h2 className="text-3xl text-hazel-600 transition mt-10 mb-6">

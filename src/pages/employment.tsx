@@ -44,8 +44,8 @@ export default function Employment() {
           Employment
         </h1>
         <p className="text">
-          This page presents previous employment positions I have held and other
-          significant experiences.
+          This section presents previous employment positions I have held and
+          other significant experiences.
         </p>
         <p className="text">
           If you would be interested in providing me with employment and
@@ -56,32 +56,49 @@ export default function Employment() {
           <FontAwesomeIcon icon={faBuilding} className="text-2xl mr-3" />
           Previous experience
         </h2>
+
         <div className="grid lg:grid-cols-2 gap-6 max-w-[50rem]">
-          <div className="rounded-md border-2 border-hazel-500 px-5 py-4">
-            <h3 className="text text-hazel-600">
-              Governess at Thornfield Hall
-            </h3>
-            <h4 className="text-lg">August 1839 — present</h4>
-            <h4 className="text-lg text-gray-600">
-              This is my current position: a governess at Thornfield Hall for
-              the daughter of Edward Rochester. I serve as both her teacher and
-              caretaker.
-            </h4>
+          <div className="rounded-md border-2 border-hazel-500">
+            <div className="w-full flex items-center align-middle  ">
+              <img
+                src="/thornfield-hall.jpg"
+                className="mx-auto w-full h-36 object-center object-cover grayscale rounded-t-sm"
+              ></img>
+            </div>
+            <div className="px-5 py-4">
+              <h3 className="text text-hazel-600">
+                Governess at Thornfield Hall
+              </h3>
+              <h4 className="text-lg">October 1807 — present</h4>
+              <h4 className="text-lg text-gray-600">
+                This is my current position: governess at Thornfield Hall for
+                the daughter of Edward Rochester. I serve as both her teacher
+                and caretaker.
+              </h4>
+            </div>
           </div>
 
-          <div className="rounded-md border-2 border-hazel-500 px-5 py-4">
-            <h3 className="text text-hazel-600">Teacher at Lowood</h3>
-            <h4 className="text-lg">July 1837 — June 1839</h4>
-            <h4 className="text-lg text-gray-600">
-              For two years I served as a teacher at the school in which I grew
-              up, teaching young girls reading, writing, arithmetic, and othre
-              practical skills.
-            </h4>
+          <div className="rounded-md border-2 border-hazel-500">
+            <div className="w-full flex items-center align-middle  ">
+              <img
+                src="/lowood-school.jpg"
+                className="mx-auto w-full h-36 object-center object-cover grayscale rounded-t-sm"
+              ></img>
+            </div>
+            <div className="px-5 py-4">
+              <h3 className="text text-hazel-600">Teacher at Lowood</h3>
+              <h4 className="text-lg">July 1805 — September 1807</h4>
+              <h4 className="text-lg text-gray-600">
+                For two years I served as a teacher at the school in which I
+                grew up, teaching young girls reading, writing, arithmetic, and
+                other practical skills.
+              </h4>
+            </div>
           </div>
 
           <div className="rounded-md border-2 border-hazel-500 px-5 py-4">
             <h3 className="text text-hazel-600">Education at Lowood</h3>
-            <h4 className="text-lg leading-8">June 1831 — July 1837</h4>
+            <h4 className="text-lg leading-8">January 1800 — June 1805</h4>
             <h4 className="text-lg text-gray-600">
               I not only received an excellent education from Lowood, but
               additionally had the opportunity to meet many brilliant pupils and
