@@ -61,14 +61,22 @@ export default function Employment() {
             <h3 className="text text-hazel-600">
               Governess at Thornfield Hall
             </h3>
-            <h4 className="text-lg">descriptiopn</h4>
-            <h4 className="text-lg">references???</h4>
+            <h4 className="text-lg">August 1839 — present</h4>
+            <h4 className="text-lg text-gray-600">
+              This is my current position: a governess at Thornfield Hall for
+              the daughter of Edward Rochester. I serve as both her teacher and
+              caretaker.
+            </h4>
           </div>
 
           <div className="rounded-md border-2 border-hazel-500 px-5 py-4">
             <h3 className="text text-hazel-600">Teacher at Lowood</h3>
             <h4 className="text-lg">July 1837 — June 1839</h4>
-            <h4 className="text-lg">I served as a teacher </h4>
+            <h4 className="text-lg text-gray-600">
+              For two years I served as a teacher at the school in which I grew
+              up, teaching young girls reading, writing, arithmetic, and othre
+              practical skills.
+            </h4>
           </div>
 
           <div className="rounded-md border-2 border-hazel-500 px-5 py-4">

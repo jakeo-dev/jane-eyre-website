@@ -57,7 +57,7 @@ export default function Blog() {
               The Signifiance of A Supportive Upbringing
             </h3>
             <h4 className="text text-lg">February 7th, 1842</h4>
-            <h4 className="text text-lg fade-text">
+            <h4 className="text text-lg fade-text text-gray-600">
               It felt like only yesterday when the boy who went by the name of
               John Reed began to corner me, calling me a dependent, a rat, and
               every other insult one could imagine...
@@ -69,7 +69,7 @@ export default function Blog() {
               A Review of My Time as a Governess
             </h3>
             <h4 className="text text-lg">December 2nd, 1841</h4>
-            <h4 className="text text-lg fade-text">
+            <h4 className="text text-lg fade-text text-gray-600">
               My time as a governess began almost immediately after my work as a
               teacher at Lowood. Both employment experiences have been both
               enjoyable for myself and useful for my life in work...
@@ -81,7 +81,7 @@ export default function Blog() {
               Excellent Books for Reading
             </h3>
             <h4 className="text text-lg">September 23rd, 1838</h4>
-            <h4 className="text text-lg fade-text">
+            <h4 className="text text-lg fade-text text-gray-600">
               {`I would say I have read a significant number of stories in my
               lifetime, both historical and fantastical. My first choice would
               be Jonathan Swift's novel, Gulliver's Travels...`}

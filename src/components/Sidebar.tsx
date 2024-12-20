@@ -12,10 +12,10 @@ export default function Sidebar(props: {
   const [sidebarVisible, setSidebarVisible] = useState(false);
 
   return (
-    <div className={`${props.font2} absolute top-6 left-8 z-10 lg:static`}>
+    <div className={`${props.font2} absolute top-6 left-6 z-10 lg:static`}>
       {/* sidebar */}
       <button
-        className="lg:hidden text-2xl flex items-center pb-4"
+        className="lg:hidden bg-stone-200 text-2xl flex items-center rounded-lg px-3 py-1.5"
         onClick={() => {
           if (sidebarVisible) setSidebarVisible(false);
           else setSidebarVisible(true);
@@ -28,7 +28,7 @@ export default function Sidebar(props: {
       <div
         className={`${props.font2} ${
           sidebarVisible ? "fadeOut" : "fadeIn"
-        } lg:fadeOut lg:h-full lg:w-[26rem] bg-stone-300 rounded-xl lg:rounded-none shadow-lg lg:bg-gradient-to-r from-hazel-400/10 via-hazel-400/10 to-hazel-500/20 px-8 lg:px-12 py-12 lg:py-24`}
+        } lg:fadeOut lg:h-full lg:w-[26rem] bg-stone-200 rounded-xl lg:rounded-none shadow-lg lg:bg-gradient-to-r from-hazel-400/10 via-hazel-400/10 to-hazel-500/20 px-8 lg:px-12 py-12 lg:py-24 mt-2 lg:mt-0`}
       >
         <div className="flex items-start">
           <Image
