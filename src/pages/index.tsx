@@ -4,7 +4,7 @@ import Sidebar from "@/components/Sidebar";
 
 import localFont from "next/font/local";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBookmark } from "@fortawesome/free-regular-svg-icons";
+import { faBookmark, faUser } from "@fortawesome/free-regular-svg-icons";
 import { faMusic } from "@fortawesome/free-solid-svg-icons";
 const hurricane = localFont({
   src: [
@@ -98,6 +98,23 @@ export default function Home() {
           <h4 className="text-lg">By William Shakespeare</h4>
           <h4 className="text-lg">For the last 12 days</h4>
         </div>
+
+        <h2 className="text-3xl text-hazel-600 transition mt-10 mb-6">
+          <FontAwesomeIcon icon={faUser} className="text-2xl mr-3" />
+          More about who I am
+        </h2>
+        <p className="text pb-16">
+          I am an 18-year-old governess who has had many experiences which I
+          believe may be of interest to some. Through the relationships that I
+          fostered, I have come to a point in my life with which I am happy. In
+          the section of this website titled "Blog," you may find pieces of my
+          writing where I share specific parts of my life. I enjoy communicating
+          these experiences and reflections because for quite a while I was not
+          able to truly share them with others, but now I have been given the
+          ability by this website. I hope that you can understand how I have
+          become my current persevering and non-conforming self through these
+          pages.
+        </p>
       </div>
     </div>
   );

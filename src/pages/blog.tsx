@@ -52,7 +52,20 @@ export default function Blog() {
           Posts
         </h2>
 
-        <div className="flex flex-col gap-y-6 max-w-[50rem]">
+        <div className="flex flex-col gap-y-6 max-w-[50rem] pb-16">
+          <div className="rounded-md border-2 border-hazel-500 px-5 py-4">
+            <h3 className="text text-2xl text-hazel-600">
+              Writing an Autobiobraphy: Difficulties and Solutions
+            </h3>
+            <h4 className="text text-lg">April 29th, 1808</h4>
+            <h4 className="text text-lg fade-text text-gray-600">
+              Since the day I left the troubling Gateshead Hall, I have had a
+              desire to write a book capturing my life: my relationships, my
+              beliefs, my thoughts, and an overall review of each event that
+              shaped me...
+            </h4>
+          </div>
+
           <div className="rounded-md border-2 border-hazel-500 px-5 py-4">
             <h3 className="text text-2xl text-hazel-600">
               A Reflection of My Time as a Governess
@@ -71,7 +84,7 @@ export default function Blog() {
             <h3 className="text text-2xl text-hazel-600">
               The Significance of A Supportive Upbringing
             </h3>
-            <h4 className="text text-lg">May 2nd, 1807</h4>
+            <h4 className="text text-lg">December 2nd, 1806</h4>
             <h4 className="text text-lg fade-text text-gray-600">
               It felt like only yesterday when the boy who went by the name of
               John Reed began to corner me, calling me a dependent, a rat, and
@@ -83,8 +96,8 @@ export default function Blog() {
 
           <div className="rounded-md border-2 border-hazel-500 px-5 py-4">
             <h3 className="text text-2xl text-hazel-600">
-              A Critique of Jonathan Swift's{" "}
-              <span className="italic">Gulliver's Travels</span>
+              {`A Critique of Jonathan Swift's `}
+              <span className="italic">{`Gulliver's Travels`}</span>
             </h3>
             <h4 className="text text-lg">September 23rd, 1804</h4>
             <h4 className="text text-lg fade-text text-gray-600">

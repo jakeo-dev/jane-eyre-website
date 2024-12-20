@@ -57,7 +57,7 @@ export default function Employment() {
           Previous experience
         </h2>
 
-        <div className="grid lg:grid-cols-2 gap-6 max-w-[50rem]">
+        <div className="grid lg:grid-cols-2 gap-6 max-w-[50rem] pb-16">
           <div className="rounded-md border-2 border-hazel-500">
             <div className="w-full flex items-center align-middle  ">
               <img
